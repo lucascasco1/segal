@@ -1,0 +1,2 @@
+# segal
+landing page segal
