@@ -18,11 +18,12 @@
 }
 
 header{
+    background: #1F77CA;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 10px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +31,7 @@ header{
 }
 
 .logo{
- max-width: 200px;
+ max-width: 150px;
 }
 
 .navigation{
@@ -111,7 +112,7 @@ header{
 
 .slider .slides img{
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 .footer{
@@ -186,7 +187,7 @@ header{
 
 
 
-@media(max-width:991px){
+@media(max-width:1082px){
     .main{
         padding: 40px;
     }
@@ -300,5 +301,160 @@ header{
     }
     .sci{
         margin-top: 40px;
+    }
+}
+
+/* TRABAJA CON NOSOTROS */
+
+.contact.form{
+    grid-area: form;
+    
+}
+
+.contact.form2{
+    grid-area: info;
+    background: #fff;
+}
+
+.contact.info{
+    grid-area: info;
+    background: radial-gradient(#6fb4f5, #1F77CA) ;
+
+}
+.contact.info2{
+    grid-area: form;
+    background: radial-gradient(#6fb4f5, #1F77CA);
+
+
+}
+
+.contact{
+    padding:40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    grid-gap:20px;
+    margin-top:20px;
+    padding-top: 40px;
+}
+.box2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    grid-gap:20px;
+    margin-top:20px;
+    padding-top: 40px;
+}
+.contact h3{
+    color: #4C741A;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* FORMULARIO */
+
+.formBox{
+    position: relative;
+    width: 100%;
+    
+}
+
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+
+.inputBox span{
+    color:#1F77CA;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 120px;
+    margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"]{
+    background: radial-gradient(#438ed5, #1F77CA) ;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.contact.info .redes{
+    display: flex;
+    width:100%;
+    justify-content:space-around;
+}
+
+.contact.info .infoBox{
+    color: #fff;
+    margin-top:10%;
+}
+
+.contact.info2 .redes{
+    display: flex;
+    width:100%;
+    justify-content:space-around;
+}
+
+.contact.info2 .infoBox{
+    color: #fff;
+    margin-top:10%;
+}
+
+@media(max-width:991px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .box2{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .formBox .row50{
+        flex-direction: column;
+    }
+
+    .inputBox{
+        width: 100%;
     }
 }
